@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+*{
+box-sizing: border-box;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+
+
+.navbar{
+overflow: hidden;
+background-color: #80e5ff;
+font-size: 20px;
+}
+ 
+.navbar a{
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+}
+
+.navbar a.left {
+  float: left;
+}
+
+.navbar a:hover {
+  color: #ff471a;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar" id="a">
+   <a href="#">BOOK NOW</a>
+   <a href="#">ABOUT US</a>
+   <a href="#">MENU</a>
+   <a href="#">CAFE</a>
+   <a href="#">HOME</a>
+<a href="#"  class="left" style="color:#ff471a; margin-left: 70px; font-size: 60px; text-align: center;  font-family: 'Anton', sans-serif;">
+Kitchen<br>Mafia</a> 
+   
+
+</div>  
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="C:\Users\Lenovo\Desktop\boot.4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="C:\Users\Lenovo\Desktop\boot.6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="C:\Users\Lenovo\Desktop\boot.5.png" style="width:100%">
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script><br><br><br>
+
+<p style="color:#ff471a; font-size: 40px; margin-left:100px">For those who love everything about food.</p>
+<p style="font-size: 30px; margin-left:100px;"> "Good food, good company, great listening music and wonderfull atmosphere.<br> You can't ask anything better."</p>
+<br>
+
+<
+<p style="color:#0099cc; font-size: 60px; margin-left:200px;">GALLERY</p><br>
+<p style="color:#ff471a; font-size: 40px; margin-left:200px">FOOD & BEVERAGE</p>
+<p style="font-size: 20px;  margin-left:200px;"><b>Kitchen Mafia focused on how its food  made from freshly baked bread and fresh ingredients,
+ in front of customers to their exact specifications.<b></p>
+<div class="container">    
+<div class="row;">
+<div class="col-sm-2">
+<img src="C:\Users\Lenovo\Desktop\boot.12.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px;" alt="Image">
+</div>
+    
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.7.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px;" alt="Image">
+</div>
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.8.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px;" alt="Image">
+</div>
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.9.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px;" alt="Image">
+</div>
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.10.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px;" alt="Image">
+</div>
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.11.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px;" alt="Image">
+</div>
+</div>
+</div>
+<br>
+
+<div class="container">    
+<div class="row; mx-auto d-block">
+<div class="col-sm-2" sryle="margin-left:500px;">
+<img src="C:\Users\Lenovo\Desktop\boot.13.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+ </div>
+<div class="col-sm-2"> 
+ <img src="C:\Users\Lenovo\Desktop\boot.18.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.15.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.16.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.19.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div> 
+<div class="col-sm-2"> 
+<img src="C:\Users\Lenovo\Desktop\boot.20.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>  
+</div>
+</div>
+<br><br><br><br>
+<p style="color:#ff471a; font-size: 40px; margin-left:200px">DESSERTS</p>
+<p style="font-size: 20px;  margin-left:200px;">Satisfy your sweet tooth with dessert recipes from Kitchen Mafia, including cookies, cupcakes and pies.
+<div class="container"></p>    
+<div class="row; mx-auto d-block">
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.25.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.26.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.27.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div> 
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.28.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>  
+</div>
+</div>
+<br>
+<div class="container">    
+<div class="row; mx-auto d-block">
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.21.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.22.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.23.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div> 
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.24.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>  
+</div>
+</div>
+
+<br><br><br><br>
+<p style="color:#ff471a; font-size: 40px; margin-left:200px">DESIGN & INTERIOR</p>
+<div class="container">    
+<div class="row; mx-auto d-block">
+<div class="col-sm-4"> 
+<img src="C:\Users\Lenovo\Desktop\boot.29.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:300px; " alt="Image">
+</div>
+<div class="col-sm-4"> 
+<img src="C:\Users\Lenovo\Desktop\boot.30.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:300px; " alt="Image">
+</div>
+<div class="col-sm-4"> 
+<img src="C:\Users\Lenovo\Desktop\boot.31.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:300px; " alt="Image">
+</div>   
+</div>
+</div>
+<br>
+<div class="container">    
+<div class="row; mx-auto d-block">
+<div class="col-sm-4"> 
+<img src="C:\Users\Lenovo\Desktop\boot.33.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:300px; " alt="Image">
+</div>
+<div class="col-sm-4"> 
+<img src="C:\Users\Lenovo\Desktop\boot.35.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:300px; " alt="Image">
+</div>
+<div class="col-sm-4"> 
+<img src="C:\Users\Lenovo\Desktop\boot.32.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:300px; " alt="Image">
+</div>  
+</div>
+</div>
+<br><br><br><br>
+<p style="color:#ff471a; font-size: 40px; margin-left:200px">CAFE</p>
+<div class="container">    
+<div class="row; mx-auto d-block">    
+<div class="col-sm-6"><p style="font-size:20px"><b>Why settle for good coffee when it could be great?<br><br>
+At KITCHEN MAFIA, our love for roasting is inspired by our desire to make quality coffee, easily accessible.
+ We've refined brewing techniques and artfully roasted beans, hand-sourced from select plantations, 
+so you get a really great cup, real easy. Without any extra brewing equipment! So enjoy your cup of Cohoma, 
+exactly your way.<b></p>
+</div>
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.36.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.37.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div> 
+</div>
+</div>
+<br>
+<div class="container">    
+<div class="row; mx-auto d-block">
+<div class="col-sm-3"> 
+</div>
+<div class="col-sm-3"> 
+</div>
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.39.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">
+</div>
+<div class="col-sm-3"> 
+<img src="C:\Users\Lenovo\Desktop\boot.38.jpg" class="img-responsive; img-thumbnail" style="width:100%; height:200px; " alt="Image">  
+</div>
+</div>
+</div><br>
+<a href="#a" style="margin-left:700px; font-size:40px; background-color:#ff471a; padding: 10px 20px; ">Top</a><br><br>
+<footer style="background-color:black; color: white; font-size: 20px; text-align: center;"><a href="#">ABOUT US</a><a href="#"><br><a>CONTACT US</a><br>Kitchen_Mafia@gmail.com
+</footer>
+</body>
+</html>
